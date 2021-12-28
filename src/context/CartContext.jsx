@@ -1,9 +1,9 @@
 import * as React from "react";
-
+import { imgData } from "../data/imgData";
 const CartContext = React.createContext();
 
 const CartProvider = ({ children }) => {
-  const [cart, setCart] = React.useState([]);
+  const [cart, setCart] = React.useState(imgData);
   return (
     <CartContext.Provider value={{ cart, setCart }}>
       {children}

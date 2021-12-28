@@ -1,0 +1,6 @@
+footer {
+  margin-top: auto;
+  display: grid;
+  place-items: center;
+  min-height: 100px;
+}
