@@ -4,8 +4,16 @@ const CartContext = React.createContext();
 
 const CartProvider = ({ children }) => {
   const [cart, setCart] = React.useState(imgData);
+  const handleChange = (id) => {
+    setCart(
+      cart.map((item) => {
+        if (item.id === id) return { ...item, selected: !item.selected };
+        else return item;
+      })
+    );
+  };
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartContext.Provider value={{ cart, setCart, handleChange }}>
       {children}
     </CartContext.Provider>
   );
