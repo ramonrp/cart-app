@@ -1,5 +1,6 @@
 import { useCart } from "../../context/CartContext";
 import GalleryItem from "./GalleryItem/GalleryItem";
+import styles from "./filteredlist.module.css";
 const FilteredList = ({ searchTerm }) => {
   const { cart } = useCart();
   let filteredCart = cart;
@@ -11,7 +12,7 @@ const FilteredList = ({ searchTerm }) => {
     <GalleryItem key={item.id} {...item} />
   ));
 
-  return <div>{filteredItems}</div>;
+  return <div className={styles.grid}>{filteredItems}</div>;
 };
 
 export default FilteredList;
