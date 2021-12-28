@@ -8,7 +8,7 @@ const GalleryItem = ({ pictureUrl, title, selected, id }) => {
       </div>
       <p>{title}</p>
       <input
-        onChange={() => handleChange(id)}
+        onChange={(e) => handleChange(e, id)}
         checked={selected}
         type="checkbox"
       ></input>

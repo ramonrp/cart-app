@@ -3,17 +3,16 @@ import { imgData } from "../data/imgData";
 const CartContext = React.createContext();
 
 const CartProvider = ({ children }) => {
-  const [cart, setCart] = React.useState(imgData);
-  const handleChange = (id) => {
-    setCart(
-      cart.map((item) => {
-        if (item.id === id) return { ...item, selected: !item.selected };
-        else return item;
-      })
-    );
+  const [cart, setCart] = React.useState(["a", "b"]);
+  const handleChange = (e, idInput) => {
+    if (cart.includes(idInput)) setCart(cart.filter((id) => id !== idInput));
+    else setCart([...cart, idInput]);
+  };
+  const handleClick = (idClick) => {
+    setCart(cart.filter((id) => id !== idClick));
   };
   return (
-    <CartContext.Provider value={{ cart, setCart, handleChange }}>
+    <CartContext.Provider value={{ cart, setCart, handleChange, handleClick }}>
       {children}
     </CartContext.Provider>
   );
