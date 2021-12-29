@@ -11,8 +11,14 @@ const CartProvider = ({ children }) => {
   const handleClick = (idClick) => {
     setCart(cart.filter((id) => id !== idClick));
   };
+
+  const handleEmptyCart = () => {
+    setCart([]);
+  };
   return (
-    <CartContext.Provider value={{ cart, setCart, handleChange, handleClick }}>
+    <CartContext.Provider
+      value={{ cart, setCart, handleChange, handleClick, handleEmptyCart }}
+    >
       {children}
     </CartContext.Provider>
   );
