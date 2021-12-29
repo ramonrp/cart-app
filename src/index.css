@@ -22,6 +22,7 @@ body {
   height: 100%;
   /* Delete reach-ui styles import */
   --reach-dialog: 1;
+  font-family: "Roboto", sans-serif;
 }
 /*
   Typographic tweaks!
