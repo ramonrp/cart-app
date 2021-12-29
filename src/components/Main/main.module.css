@@ -18,7 +18,8 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: 35%;
+  width: 50%;
+  max-width: 350px;
   background-color: white;
   padding: 32px;
 }
