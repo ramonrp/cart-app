@@ -6,6 +6,7 @@ const imgData = [
     title: "one cat",
     category: "cat",
     selected: false,
+    price: 9,
   },
   {
     id: "b",
@@ -14,6 +15,7 @@ const imgData = [
     title: "one cat",
     category: "cat",
     selected: false,
+    price: 5,
   },
   {
     id: "c",
@@ -22,6 +24,7 @@ const imgData = [
     title: "one cat",
     category: "cat",
     selected: false,
+    price: 7,
   },
   {
     id: "d",
@@ -30,6 +33,7 @@ const imgData = [
     title: "one cat",
     category: "cat",
     selected: false,
+    price: 9,
   },
   {
     id: "e",
@@ -38,6 +42,7 @@ const imgData = [
     title: "one dog",
     category: "dog",
     selected: false,
+    price: 4,
   },
   {
     id: "f",
@@ -46,6 +51,7 @@ const imgData = [
     title: "one dog",
     category: "dog",
     selected: false,
+    price: 7,
   },
   {
     id: "g",
@@ -54,6 +60,7 @@ const imgData = [
     title: "one dog",
     category: "dog",
     selected: false,
+    price: 10,
   },
   {
     id: "h",
@@ -62,6 +69,7 @@ const imgData = [
     title: "one dog",
     category: "dog",
     selected: false,
+    price: 25,
   },
 ];
 
