@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
+import { ShoppingBag } from "react-feather";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
 import { CartProvider } from "../../context/CartContext";
@@ -10,7 +11,7 @@ import styles from "./main.module.css";
 const useStyles = makeStyles({
   root: {
     position: "fixed",
-    top: "25px",
+    top: "15px",
     right: "25px",
   },
 });
@@ -27,7 +28,9 @@ const Main = () => {
           color="primary"
           aria-label="cart"
           className={stylesUI.root}
-        ></Fab>
+        >
+          <ShoppingBag />
+        </Fab>
       )}
       <main>
         <CartProvider>
