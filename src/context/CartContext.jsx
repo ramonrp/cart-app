@@ -3,7 +3,7 @@ import { imgData } from "../data/imgData";
 const CartContext = React.createContext();
 
 const CartProvider = ({ children }) => {
-  const [cart, setCart] = React.useState(["a", "b"]);
+  const [cart, setCart] = React.useState([]);
   const handleChange = (e, idInput) => {
     if (cart.includes(idInput)) setCart(cart.filter((id) => id !== idInput));
     else setCart([...cart, idInput]);
