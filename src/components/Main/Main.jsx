@@ -24,7 +24,7 @@ const Main = () => {
             onDismiss={close}
           >
             <DialogContent className={styles.content} aria-label="cart">
-              <Cart />
+              <Cart onDismiss={close} />
             </DialogContent>
           </DialogOverlay>
         </CartProvider>
