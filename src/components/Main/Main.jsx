@@ -25,7 +25,7 @@ const Main = () => {
       {!showCart && (
         <Fab
           onClick={open}
-          color="primary"
+          color="secondary"
           aria-label="cart"
           className={stylesUI.root}
         >
