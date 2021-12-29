@@ -1,4 +1,24 @@
-main {
-  display: flex;
-  gap: 32px;
+.buttonOpen {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0deg 0% 0% / 0.6);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  background-color: white;
+  padding: 32px;
 }
