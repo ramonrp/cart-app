@@ -1,0 +1,7 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
