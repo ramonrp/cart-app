@@ -1,3 +1,5 @@
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { useCart } from "../../../context/CartContext";
 import styles from "./galleryitem.module.css";
 const GalleryItem = ({ pictureUrl, title, selected, id }) => {
@@ -8,12 +10,16 @@ const GalleryItem = ({ pictureUrl, title, selected, id }) => {
         <img src={pictureUrl} alt={title}></img>
       </div>
       <p>{title}</p>
-      <input
-        onChange={(e) => handleChange(e, id)}
-        checked={selected}
-        type="checkbox"
-      ></input>
-      <label>Buy</label>
+      <FormControlLabel
+        label="buy"
+        control={
+          <Checkbox
+            color="primary"
+            checked={selected}
+            onChange={(e) => handleChange(e, id)}
+          ></Checkbox>
+        }
+      ></FormControlLabel>
     </article>
   );
 };

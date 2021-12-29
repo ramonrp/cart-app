@@ -1,3 +1,5 @@
+import Button from "@material-ui/core/Button";
+
 import { useCart } from "../../../context/CartContext";
 import styles from "./cartItem.module.css";
 const CartItem = ({ pictureUrl, title, selected, id }) => {
@@ -8,7 +10,7 @@ const CartItem = ({ pictureUrl, title, selected, id }) => {
         <img src={pictureUrl} alt={title}></img>
       </div>
       <p>{title}</p>
-      <button onClick={() => handleClick(id)}>Delete</button>
+      <Button onClick={() => handleClick(id)}>Delete</Button>
     </article>
   );
 };

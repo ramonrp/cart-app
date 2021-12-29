@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 import { useCart } from "../../context/CartContext";
 import CartItem from "../Cart/CartItem/CartItem";
 import { imgData } from "../../data/imgData";
@@ -16,12 +17,19 @@ const Cart = ({ onDismiss }) => {
       {CartItems}
       <div className={styles.buttonGroup}>
         {cart.length > 0 && (
-          <button onClick={handleEmptyCart}>Delete All</button>
+          <Button color="primary" onClick={handleEmptyCart}>
+            Delete All
+          </Button>
         )}
         {cart.length > 0 && (
-          <Link onClick={onDismiss} to="/checkout">
+          <Button
+            component={Link}
+            color="secondary"
+            onClick={onDismiss}
+            to="/checkout"
+          >
             Checkout
-          </Link>
+          </Button>
         )}
       </div>
     </div>
