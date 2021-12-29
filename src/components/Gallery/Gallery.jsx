@@ -3,7 +3,7 @@ import FilteredList from "../FilteredList/FilteredList";
 import styles from "./gallery.module.css";
 const Gallery = () => {
   return (
-    <div className={styles.wrapper}>
+    <div>
       <Routes>
         <Route path="/" element={<FilteredList searchTerm="" />}></Route>
         <Route path="/cats" element={<FilteredList searchTerm="cat" />}></Route>
