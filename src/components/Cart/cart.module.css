@@ -3,3 +3,11 @@
   justify-content: space-between;
   margin-top: 24px;
 }
+.closeButton {
+  border: none;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}

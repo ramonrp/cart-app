@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
+import { X } from "react-feather";
 import { useCart } from "../../context/CartContext";
 import CartItem from "../Cart/CartItem/CartItem";
 import { imgData } from "../../data/imgData";
@@ -13,6 +14,9 @@ const Cart = ({ onDismiss }) => {
 
   return (
     <div>
+      <button className={styles.closeButton} onClick={onDismiss}>
+        <X />
+      </button>
       <h2>Cart</h2>
       {CartItems}
       <div className={styles.buttonGroup}>
