@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import FilteredList from "../FilteredList/FilteredList";
 import Checkout from "../Checkout/Checkout";
-import styles from "./gallery.module.css";
 const Gallery = () => {
   return (
     <div>
