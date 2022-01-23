@@ -1,10 +1,29 @@
-# App Layout Angular
+# Cart Images
 
-## Motivation
+## Description
 
-This is the second challenge from react module of master frontend of Lemoncode. Proposal was to do small cart shopping and use Context API from react to make it state avalaible in components who need it. No matter how deep in tree they are.
+This app is a proyect from React module of master frontend of lemoncode.
 
-## First Steps
+- Show a list of images
+- Each image can be add cart and remove from it.
+- Routing to different categories and checkout
+- Remove images from cart
+
+## Learnings
+
+- Context API.
+- Material UI. How to use it and style components.
+- Think in React: Get comfortable to check a design and divide it by component.
+
+## Instalation
+
+Clone repository and and install dependencies:
+
+```sh
+npm i
+```
+
+## Usage
 
 This project was generated with create-react-app 5.0.
 
@@ -20,8 +39,10 @@ To start development server you need to execute and navigate to `http://localhos
 npm start
 ```
 
-## Learnings
+## Author
 
-- Context API.
-- Material UI. How to use it and style components.
-- Think in React: Get comfortable to check a design and divide it by component.
+- [Ramon Ruiz](https://github.com/ramonrp)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
